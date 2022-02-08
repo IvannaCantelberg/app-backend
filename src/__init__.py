@@ -5,7 +5,7 @@ def create_app():
     app = Flask(__name__, template_folder='../static')
 
     @app.route('/')
-    def home():
+    def index():
         return render_template('index.html')
 
     from src.routes import smoke
