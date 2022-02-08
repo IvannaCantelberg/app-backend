@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 
 def create_app():
-    app = Flask(__name__, template_folder='../static')
+    app = Flask(__name__, template_folder='../static', static_folder='../static')
 
     @app.route('/')
     def index():
